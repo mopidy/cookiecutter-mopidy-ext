@@ -1,4 +1,3 @@
-=======================
 cookiecutter-mopidy-ext
 =======================
 
@@ -7,7 +6,7 @@ cookiecutter-mopidy-ext
 
 
 Usage
-=====
+-----
 
 #. Install `cookiecutter`::
 
@@ -24,8 +23,8 @@ Usage
 #. Release the extension to `PyPI <https://pypi.python.org/>`_.
 
 
-More help
-=========
+Further reading
+---------------
 
 To learn more about creating Mopidy extensions, please read the doc's on
 `extension development <http://docs.mopidy.com/en/latest/extensiondev/>`_.
