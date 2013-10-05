@@ -1,10 +1,12 @@
+****************************
 {{ cookiecutter.dist_name }}
-============================
+****************************
 
 {{ cookiecutter.short_description }}
 
-Usage
------
+
+Installation
+============
 
 Install by running::
 
@@ -13,15 +15,29 @@ Install by running::
 Or, if available, install the Debian/Ubuntu package from `apt.mopidy.com
 <http://apt.mopidy.com/>`_.
 
+
+Configuration
+=============
+
 Before starting Mopidy, you must add configuration for
 {{ cookiecutter.dist_name }} to your Mopidy configuration file::
 
     [{{ cookiecutter.ext_name }}]
     # TODO: Add example of extension config
 
+
 Project resources
------------------
+=================
 
 - `Source code <https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.dist_name|lower }}>`_
 - `Issue tracker <https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.dist_name|lower }}/issues>`_
 - `Download development snapshot <https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.dist_name|lower }}/tarball/master#egg={{ cookiecutter.dist_name }}-dev>`_
+
+
+Changelog
+=========
+
+v{{ cookiecutter.version }} (UNRELEASED)
+----------------------------------------
+
+- Initial release.
