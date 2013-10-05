@@ -1,0 +1,10 @@
+{
+  "full_name": "Alice Wonderland",
+  "email": "alice@example.com",
+  "github_username": "alice",
+  "dist_name": "Mopidy-Foobar",
+  "ext_name": "foobar",
+  "short_description": "Mopidy extension for Foobar mechanics",
+  "year": "2013",
+  "version": "0.1.0"
+}
