@@ -1,7 +1,7 @@
 from __future__ import unicode_literals
 
 import re
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 def get_version(filename):
@@ -19,7 +19,7 @@ setup(
     author_email='{{ cookiecutter.author_email }}',
     description='{{ cookiecutter.short_description }}',
     long_description=open('README.rst').read(),
-    packages=['mopidy_{{ cookiecutter.ext_name }}'],
+    packages=find_packages(exclude=['tests', 'tests.*']),
     zip_safe=False,
     include_package_data=True,
     install_requires=[
