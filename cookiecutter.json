@@ -1,7 +1,7 @@
 {
-  "full_name": "Alice Wonderland",
-  "email": "alice@example.com",
-  "github_username": "alice",
+  "author_full_name": "",
+  "author_email": "",
+  "github_username": "",
   "repo_name": "mopidy-foobar",
   "dist_name": "Mopidy-Foobar",
   "ext_name": "foobar",
