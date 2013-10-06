@@ -27,6 +27,11 @@ setup(
         'Mopidy >= 0.14',
         'Pykka >= 1.1',
     ],
+    test_suite='nose.collector',
+    tests_require=[
+        'nose',
+        'mock >= 1.0',
+    ],
     entry_points={
         'mopidy.ext': [
             '{{ cookiecutter.ext_name }} = mopidy_{{ cookiecutter.ext_name }}:Extension',
