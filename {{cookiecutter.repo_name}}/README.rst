@@ -2,6 +2,22 @@
 {{ cookiecutter.dist_name }}
 ****************************
 
+.. image:: https://pypip.in/v/{{ cookiecutter.dist_name }}/badge.png
+    :target: https://crate.io/packages/{{ cookiecutter.dist_name }}/
+    :alt: Latest PyPI version
+
+.. image:: https://pypip.in/d/{{ cookiecutter.dist_name }}/badge.png
+    :target: https://crate.io/packages/{{ cookiecutter.dist_name }}/
+    :alt: Number of PyPI downloads
+
+.. image:: https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}.png?branch=master
+    :target: https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
+    :alt: Travis CI build status
+
+.. image:: https://coveralls.io/repos/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/badge.png?branch=master
+   :target: https://coveralls.io/r/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}?branch=master
+   :alt: Test coverage
+
 {{ cookiecutter.short_description }}
 
 
