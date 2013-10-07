@@ -1,6 +1,6 @@
 import unittest
 
-from mopidy_scrobbler import Extension, frontend as frontend_lib
+from mopidy_{{ cookiecutter.ext_name }} import Extension, frontend as frontend_lib
 
 
 class ExtensionTest(unittest.TestCase):
