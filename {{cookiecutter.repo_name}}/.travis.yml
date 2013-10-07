@@ -17,7 +17,7 @@ script:
 after_success:
   - "coveralls"
 
-{% if cookiecutter.github_username equals 'mopidy' %}
+{% if cookiecutter.github_username == 'mopidy' %}
 notifications:
   irc:
     channels:
