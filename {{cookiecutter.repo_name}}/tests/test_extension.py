@@ -1,3 +1,5 @@
+from __future__ import unicode_literals
+
 import unittest
 
 from mopidy_{{ cookiecutter.ext_name }} import Extension, frontend as frontend_lib
