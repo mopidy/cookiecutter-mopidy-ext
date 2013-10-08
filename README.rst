@@ -38,5 +38,5 @@ Usage
 Further reading
 ===============
 
-To learn more about creating Mopidy extensions, please read the doc's on
+To learn more about creating Mopidy extensions, please read the docs on
 `extension development <http://docs.mopidy.com/en/latest/extensiondev/>`_.
