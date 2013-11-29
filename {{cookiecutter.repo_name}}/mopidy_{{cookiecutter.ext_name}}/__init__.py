@@ -32,7 +32,7 @@ class Extension(ext.Extension):
         #schema['password'] = config.Secret()
         return schema
 
-    # You will typically only implement one of the next three methods
+    # You will typically only implement a couple of the next methods
     # in a single extension.
 
     # TODO: Comment in and edit, or remove entirely
@@ -44,6 +44,11 @@ class Extension(ext.Extension):
     #def get_backend_classes(self):
     #    from .backend import FoobarBackend
     #    return [FoobarBackend]
+
+    # TODO: Comment in and edit, or remove entirely.
+    #def get_command(self):
+    #    from .commands import FoobarCommand
+    #    return FoobarCommand()
 
     # TODO: Comment in and edit, or remove entirely
     #def register_gstreamer_elements(self):
