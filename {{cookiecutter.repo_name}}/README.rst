@@ -3,11 +3,11 @@
 ****************************
 
 .. image:: https://pypip.in/v/{{ cookiecutter.dist_name }}/badge.png
-    :target: https://crate.io/packages/{{ cookiecutter.dist_name }}/
+    :target: https://pypi.python.org/pypi/{{ cookiecutter.dist_name }}/
     :alt: Latest PyPI version
 
 .. image:: https://pypip.in/d/{{ cookiecutter.dist_name }}/badge.png
-    :target: https://crate.io/packages/{{ cookiecutter.dist_name }}/
+    :target: https://pypi.python.org/pypi/{{ cookiecutter.dist_name }}/
     :alt: Number of PyPI downloads
 
 .. image:: https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}.png?branch=master
