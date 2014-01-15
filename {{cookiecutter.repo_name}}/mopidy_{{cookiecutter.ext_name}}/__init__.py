@@ -1,5 +1,6 @@
 from __future__ import unicode_literals
 
+import logging
 import os
 
 # TODO: Comment in if you need to register GStreamer elements below, else
@@ -13,6 +14,9 @@ from mopidy import config, ext
 
 
 __version__ = '{{ cookiecutter.version }}'
+
+# TODO: If you need to log, use loggers named after the current Python module
+logger = logging.getLogger(__name__)
 
 
 class Extension(ext.Extension):
