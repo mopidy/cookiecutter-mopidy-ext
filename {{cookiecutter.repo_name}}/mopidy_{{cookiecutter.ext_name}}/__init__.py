@@ -1,18 +1,21 @@
 from __future__ import unicode_literals
 
+import logging
 import os
 
-# TODO: Comment in if you need to register GStreamer elements below, else
-# remove entirely
-#import pygst
-#pygst.require('0.10')
-#import gst
-#import gobject
+# TODO: Remove entirely if you don't register GStreamer elements below
+import pygst
+pygst.require('0.10')
+import gst
+import gobject
 
 from mopidy import config, ext
 
 
 __version__ = '{{ cookiecutter.version }}'
+
+# TODO: If you need to log, use loggers named after the current Python module
+logger = logging.getLogger(__name__)
 
 
 class Extension(ext.Extension):
@@ -32,27 +35,19 @@ class Extension(ext.Extension):
         #schema['password'] = config.Secret()
         return schema
 
-    # You will typically only implement a couple of the next methods
-    # in a single extension.
+    def setup(self, registry):
+        # You will typically only implement one of the following things
+        # in a single extension.
 
-    # TODO: Comment in and edit, or remove entirely
-    #def get_frontend_classes(self):
-    #    from .frontend import FoobarFrontend
-    #    return [FoobarFrontend]
+        # TODO: Edit or remove entirely
+        from .frontend import FoobarFrontend
+        registry.add('frontend', FoobarFrontend)
 
-    # TODO: Comment in and edit, or remove entirely
-    #def get_backend_classes(self):
-    #    from .backend import FoobarBackend
-    #    return [FoobarBackend]
+        # TODO: Edit or remove entirely
+        from .backend import FoobarBackend
+        registry.add('backend', FoobarBackend)
 
-    # TODO: Comment in and edit, or remove entirely.
-    #def get_command(self):
-    #    from .commands import FoobarCommand
-    #    return FoobarCommand()
-
-    # TODO: Comment in and edit, or remove entirely
-    #def register_gstreamer_elements(self):
-    #    from .mixer import FoobarMixer
-    #    gobject.type_register(FoobarMixer)
-    #    gst.element_register(
-    #        FoobarMixer, 'foobarmixer', gst.RANK_MARGINAL)
+        # TODO: Edit or remove entirely
+        from .mixer import FoobarMixer
+        gobject.type_register(FoobarMixer)
+        gst.element_register(FoobarMixer, 'foobarmixer', gst.RANK_MARGINAL)
