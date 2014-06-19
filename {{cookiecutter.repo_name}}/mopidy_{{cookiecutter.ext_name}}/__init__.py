@@ -9,7 +9,7 @@ pygst.require('0.10')
 import gst
 import gobject
 
-from mopidy import config, ext
+from mopidy import config, ext, http
 
 
 __version__ = '{{ cookiecutter.version }}'
@@ -48,6 +48,20 @@ class Extension(ext.Extension):
         registry.add('backend', FoobarBackend)
 
         # TODO: Edit or remove entirely
+        registry.add('http:routers', ExtensionHTTP)
+
+        # TODO: Edit or remove entirely
         from .mixer import FoobarMixer
         gobject.type_register(FoobarMixer)
         gst.element_register(FoobarMixer, 'foobarmixer', gst.RANK_MARGINAL)
+
+class ExtensionHTTP(http.Router):
+    """
+    By default it resolves to localhost:6680/{{ cookiecutter.ext_name }}/
+    and will server all files under "static_files" folder. If you wish you can
+    override setup_routes method and define custom routing. See tornado library
+    documentation for more info.
+    """
+    name = '{{ cookiecutter.ext_name }}'
+    path = os.path.join(os.path.dirname(__file__), 'static_files')
+        
