@@ -51,3 +51,9 @@ class Extension(ext.Extension):
         from .mixer import FoobarMixer
         gobject.type_register(FoobarMixer)
         gst.element_register(FoobarMixer, 'foobarmixer', gst.RANK_MARGINAL)
+
+        # TODO: Edit or remove entirely
+        registry.add('http:static', {
+            'name': self.ext_name,
+            'path': os.path.join(os.path.dirname(__file__), 'static'),
+        })
