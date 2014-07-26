@@ -47,7 +47,7 @@ Project resources
 
 - `Source code <https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.dist_name|lower }}>`_
 - `Issue tracker <https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.dist_name|lower }}/issues>`_
-- `Download development snapshot <https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.dist_name|lower }}/archive/master.tar.gz#egg={{ cookiecutter.dist_name }}-dev>`_
+- `Development branch tarball <https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.dist_name|lower }}/archive/master.tar.gz#egg={{ cookiecutter.dist_name }}-dev>`_
 
 
 Changelog
