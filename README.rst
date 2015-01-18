@@ -2,7 +2,7 @@
 cookiecutter-mopidy-ext
 ***********************
 
-`cookiecutter <https://github.com/audreyr/cookiecutter>`_ template for a
+`cookiecutter <http://cookiecutter.readthedocs.org/>`_ template for a
 `Mopidy <http://www.mopidy.com/>`_ extension.
 
 The template sets up a project with:
