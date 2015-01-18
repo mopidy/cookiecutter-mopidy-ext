@@ -39,4 +39,4 @@ Further reading
 ===============
 
 To learn more about creating Mopidy extensions, please read the docs on
-`extension development <http://docs.mopidy.com/en/latest/extensiondev/>`_.
+`extension development <https://docs.mopidy.com/en/latest/extensiondev/>`_.
