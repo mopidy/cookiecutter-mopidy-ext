@@ -20,7 +20,7 @@ The template sets up a project with:
 Usage
 =====
 
-#. Install `cookiecutter`::
+#. Install `cookiecutter` 0.9.0 or newer::
 
        pip install cookiecutter
 
