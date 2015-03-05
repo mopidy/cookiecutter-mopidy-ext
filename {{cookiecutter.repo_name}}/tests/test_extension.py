@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 from mopidy_{{ cookiecutter.ext_name }} import Extension, frontend as frontend_lib
 
 
-def test_get_default_config(self):
+def test_get_default_config():
     ext = Extension()
 
     config = ext.get_default_config()
@@ -12,7 +12,7 @@ def test_get_default_config(self):
     assert 'enabled = true' in config
 
 
-def test_get_config_schema(self):
+def test_get_config_schema():
     ext = Extension()
 
     schema = ext.get_config_schema()
