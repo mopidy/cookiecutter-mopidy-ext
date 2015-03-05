@@ -10,7 +10,7 @@ The template sets up a project with:
 - a readme explaining how to install and configure the extension,
 - a license file with the Apache License,
 - a Python module with an empty Mopidy extension,
-- an empty test suite executed with ``nosetests``,
+- an empty test suite executed with ``py.test``,
 - continuous integration using `Travis CI <https://www.travis-ci.org/>`_,
 - test coverage reporting to `Coveralls <https://coveralls.io/>`_, and
 - a ``setup.py`` file for releasing and installing the extension as a Python
