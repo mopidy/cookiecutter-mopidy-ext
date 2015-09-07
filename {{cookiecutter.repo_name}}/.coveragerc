@@ -1,2 +1,2 @@
-[report]
+[run]
 source = mopidy_{{ cookiecutter.ext_name }}
