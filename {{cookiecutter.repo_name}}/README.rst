@@ -49,6 +49,14 @@ Project resources
 - `Issue tracker <https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.dist_name|lower }}/issues>`_
 
 
+Credits
+=======
+
+- Original author: `{{ cookiecutter.author_fullname }} <https://github.com/{{ cookiecutter.github_username }}`__
+- Current maintainer: `{{ cookiecutter.author_fullname }} <https://github.com/{{ cookiecutter.github_username }}`__
+- `Contributors <https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.dist_name|lower }}/graphs/contributors>`_
+
+
 Changelog
 =========
 
