@@ -16,7 +16,7 @@ setup(
     version=get_version('mopidy_{{ cookiecutter.ext_name }}/__init__.py'),
     url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.dist_name|lower }}',
     license='Apache License, Version 2.0',
-    author='{{ cookiecutter.author_full_name }}',
+    author='{{ cookiecutter.author_fullname }}',
     author_email='{{ cookiecutter.author_email }}',
     description='{{ cookiecutter.short_description }}',
     long_description=open('README.rst').read(),
