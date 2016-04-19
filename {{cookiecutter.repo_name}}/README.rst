@@ -52,8 +52,8 @@ Project resources
 Credits
 =======
 
-- Original author: `{{ cookiecutter.author_fullname }} <https://github.com/{{ cookiecutter.github_username }}`__
-- Current maintainer: `{{ cookiecutter.author_fullname }} <https://github.com/{{ cookiecutter.github_username }}`__
+- Original author: `{{ cookiecutter.author_full_name }} <https://github.com/{{ cookiecutter.github_username }}`__
+- Current maintainer: `{{ cookiecutter.author_full_name }} <https://github.com/{{ cookiecutter.github_username }}`__
 - `Contributors <https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.dist_name|lower }}/graphs/contributors>`_
 
 
