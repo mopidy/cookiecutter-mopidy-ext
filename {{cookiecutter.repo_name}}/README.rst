@@ -6,10 +6,6 @@
     :target: https://pypi.python.org/pypi/{{ cookiecutter.dist_name }}/
     :alt: Latest PyPI version
 
-.. image:: https://img.shields.io/pypi/dm/{{ cookiecutter.dist_name }}.svg?style=flat
-    :target: https://pypi.python.org/pypi/{{ cookiecutter.dist_name }}/
-    :alt: Number of PyPI downloads
-
 .. image:: https://img.shields.io/travis/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/master.svg?style=flat
     :target: https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
     :alt: Travis CI build status
