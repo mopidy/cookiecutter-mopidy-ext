@@ -1,6 +1,5 @@
 *.egg-info
 *.pyc
-*.swp
 .cache/
 .coverage
 .tox/
