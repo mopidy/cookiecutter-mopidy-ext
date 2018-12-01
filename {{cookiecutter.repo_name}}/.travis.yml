@@ -1,9 +1,10 @@
-sudo: false
-
 language: python
 
 python:
-  - "2.7_with_system_site_packages"
+  - "2.7"
+
+virtualenv:
+  system_site_packages: true
 
 addons:
   apt:
@@ -17,19 +18,19 @@ env:
   - TOX_ENV=flake8
 
 install:
-  - "pip install tox"
+  - pip install tox
 
 script:
-  - "tox -e $TOX_ENV"
+  - tox -e $TOX_ENV
 
 after_success:
-  - "if [ $TOX_ENV == 'py27' ]; then pip install coveralls; coveralls; fi"
+  - if [ $TOX_ENV == 'py27' ]; then pip install coveralls; coveralls; fi
 
 {% if cookiecutter.github_username == 'mopidy' %}
 notifications:
   irc:
     channels:
-      - "irc.freenode.org#mopidy"
+      - irc.freenode.org#mopidy
     on_success: change
     on_failure: change
     use_notice: true
