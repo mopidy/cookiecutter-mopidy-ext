@@ -26,8 +26,8 @@ setup(
     python_requires='> 2.7, < 3',
     install_requires=[
         'setuptools',
-        'Mopidy >= 1.0',
-        'Pykka >= 1.1',
+        'Mopidy >= 2.2',
+        'Pykka >= 2.0',
     ],
     entry_points={
         'mopidy.ext': [
