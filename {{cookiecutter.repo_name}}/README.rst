@@ -43,6 +43,7 @@ Project resources
 
 - `Source code <https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.dist_name|lower }}>`_
 - `Issue tracker <https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.dist_name|lower }}/issues>`_
+- `Changelog <https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.dist_name|lower }}/blob/master/CHANGELOG.rst>`_
 
 
 Credits
@@ -51,12 +52,3 @@ Credits
 - Original author: `{{ cookiecutter.author_full_name }} <https://github.com/{{ cookiecutter.github_username }}`__
 - Current maintainer: `{{ cookiecutter.author_full_name }} <https://github.com/{{ cookiecutter.github_username }}`__
 - `Contributors <https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.dist_name|lower }}/graphs/contributors>`_
-
-
-Changelog
-=========
-
-v{{ cookiecutter.version }} (UNRELEASED)
-----------------------------------------
-
-- Initial release.
