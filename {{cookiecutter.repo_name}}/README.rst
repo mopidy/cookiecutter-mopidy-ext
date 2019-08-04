@@ -3,7 +3,7 @@
 ****************************
 
 .. image:: https://img.shields.io/pypi/v/{{ cookiecutter.dist_name }}.svg?style=flat
-    :target: https://pypi.python.org/pypi/{{ cookiecutter.dist_name }}/
+    :target: https://pypi.org/project/{{ cookiecutter.dist_name }}/
     :alt: Latest PyPI version
 
 .. image:: https://img.shields.io/travis/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/master.svg?style=flat
@@ -25,7 +25,7 @@ Install by running::
     pip install {{ cookiecutter.dist_name }}
 
 Or, if available, install the Debian/Ubuntu package from `apt.mopidy.com
-<http://apt.mopidy.com/>`_.
+<https://apt.mopidy.com/>`_.
 
 
 Configuration

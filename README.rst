@@ -2,8 +2,8 @@
 cookiecutter-mopidy-ext
 ***********************
 
-`cookiecutter <http://cookiecutter.readthedocs.org/>`_ template for a
-`Mopidy <http://www.mopidy.com/>`_ extension.
+`cookiecutter <https://cookiecutter.readthedocs.io/>`_ template for a
+`Mopidy <https://www.mopidy.com/>`_ extension.
 
 The template sets up a project with:
 
@@ -32,7 +32,7 @@ Usage
 
 #. Make your Mopidy extension do something.
 
-#. Release the extension to `PyPI <https://pypi.python.org/>`_.
+#. Release the extension to `PyPI <https://pypi.org/>`_.
 
 
 Further reading
