@@ -6,7 +6,7 @@ import os
 from mopidy import config, ext
 
 
-__version__ = '{{ cookiecutter.version }}'
+__version__ = "{{ cookiecutter.version }}"
 
 # TODO: If you need to log, use loggers named after the current Python module
 logger = logging.getLogger(__name__)
@@ -14,19 +14,19 @@ logger = logging.getLogger(__name__)
 
 class Extension(ext.Extension):
 
-    dist_name = '{{ cookiecutter.dist_name }}'
-    ext_name = '{{ cookiecutter.ext_name }}'
+    dist_name = "{{ cookiecutter.dist_name }}"
+    ext_name = "{{ cookiecutter.ext_name }}"
     version = __version__
 
     def get_default_config(self):
-        conf_file = os.path.join(os.path.dirname(__file__), 'ext.conf')
+        conf_file = os.path.join(os.path.dirname(__file__), "ext.conf")
         return config.read(conf_file)
 
     def get_config_schema(self):
         schema = super(Extension, self).get_config_schema()
         # TODO: Comment in and edit, or remove entirely
-        #schema['username'] = config.String()
-        #schema['password'] = config.Secret()
+        #schema["username"] = config.String()
+        #schema["password"] = config.Secret()
         return schema
 
     def setup(self, registry):
@@ -35,14 +35,14 @@ class Extension(ext.Extension):
 
         # TODO: Edit or remove entirely
         from .frontend import FoobarFrontend
-        registry.add('frontend', FoobarFrontend)
+        registry.add("frontend", FoobarFrontend)
 
         # TODO: Edit or remove entirely
         from .backend import FoobarBackend
-        registry.add('backend', FoobarBackend)
+        registry.add("backend", FoobarBackend)
 
         # TODO: Edit or remove entirely
-        registry.add('http:static', {
-            'name': self.ext_name,
-            'path': os.path.join(os.path.dirname(__file__), 'static'),
+        registry.add("http:static", {
+            "name": self.ext_name,
+            "path": os.path.join(os.path.dirname(__file__), "static"),
         })
