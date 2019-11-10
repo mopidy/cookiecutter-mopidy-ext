@@ -1,4 +1,3 @@
-include .travis.yml
 include *.py
 include *.rst
 include LICENSE
@@ -6,6 +5,7 @@ include MANIFEST.in
 include pyproject.toml
 include tox.ini
 
+recursive-include .circleci *
 recursive-include .github *
 
 include mopidy_{{ cookiecutter.ext_name }}/ext.conf
