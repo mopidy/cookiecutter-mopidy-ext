@@ -3,7 +3,7 @@ cookiecutter-mopidy-ext
 ***********************
 
 `cookiecutter <https://cookiecutter.readthedocs.io/>`_ template for a
-`Mopidy <https://www.mopidy.com/>`_ extension.
+`Mopidy <https://mopidy.com/>`_ extension.
 
 The template sets up a project with:
 
@@ -20,13 +20,13 @@ The template sets up a project with:
 Usage
 =====
 
-#. Install `cookiecutter` 0.9.0 or newer::
+#. Install `cookiecutter`::
 
-       pip install cookiecutter
+       python3 -m pip install cookiecutter
 
 #. Generate a Mopidy extension project::
 
-       cookiecutter https://github.com/mopidy/cookiecutter-mopidy-ext.git
+       cookiecutter gh:mopidy/cookiecutter-mopidy-ext
 
 #. Create a Git repo from the generated project.
 
