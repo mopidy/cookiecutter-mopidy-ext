@@ -22,10 +22,10 @@ Installation
 
 Install by running::
 
-    pip install {{ cookiecutter.dist_name }}
+    python3 -m pip install {{ cookiecutter.dist_name }}
 
-Or, if available, install the Debian/Ubuntu package from `apt.mopidy.com
-<https://apt.mopidy.com/>`_.
+Or, if available, install the Debian/Ubuntu package from
+`apt.mopidy.com <https://apt.mopidy.com/>`_.
 
 
 Configuration

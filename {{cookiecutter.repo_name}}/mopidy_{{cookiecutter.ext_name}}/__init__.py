@@ -1,7 +1,5 @@
-from __future__ import unicode_literals
-
 import logging
-import os
+import pathlib
 
 from mopidy import config, ext
 
@@ -19,7 +17,7 @@ class Extension(ext.Extension):
     version = __version__
 
     def get_default_config(self):
-        conf_file = os.path.join(os.path.dirname(__file__), "ext.conf")
+        conf_file = pathlib.Path(__file__) / "ext.conf"
         return config.read(conf_file)
 
     def get_config_schema(self):
@@ -44,5 +42,5 @@ class Extension(ext.Extension):
         # TODO: Edit or remove entirely
         registry.add("http:static", {
             "name": self.ext_name,
-            "path": os.path.join(os.path.dirname(__file__), "static"),
+            "path": str(pathlib.Path(__file__) / "static")),
         })
