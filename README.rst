@@ -3,16 +3,16 @@ cookiecutter-mopidy-ext
 ***********************
 
 `cookiecutter <https://cookiecutter.readthedocs.io/>`_ template for a
-`Mopidy <https://www.mopidy.com/>`_ extension.
+`Mopidy <https://mopidy.com/>`_ extension.
 
 The template sets up a project with:
 
 - a readme explaining how to install and configure the extension,
 - a license file with the Apache License,
 - a Python module with an empty Mopidy extension,
-- an empty test suite executed with ``py.test``,
-- continuous integration using `Travis CI <https://www.travis-ci.org/>`_,
-- test coverage reporting to `Coveralls <https://coveralls.io/>`_, and
+- an empty test suite executed with ``pytest``,
+- continuous integration using `CircleCI <https://www.circleci.com/>`_,
+- test coverage reporting to `Codecov <https://codecov.io/>`_, and
 - a ``setup.py`` file for releasing and installing the extension as a Python
   package.
 
@@ -20,13 +20,13 @@ The template sets up a project with:
 Usage
 =====
 
-#. Install `cookiecutter` 0.9.0 or newer::
+#. Install `cookiecutter`::
 
-       pip install cookiecutter
+       python3 -m pip install cookiecutter
 
 #. Generate a Mopidy extension project::
 
-       cookiecutter https://github.com/mopidy/cookiecutter-mopidy-ext.git
+       cookiecutter gh:mopidy/cookiecutter-mopidy-ext
 
 #. Create a Git repo from the generated project.
 

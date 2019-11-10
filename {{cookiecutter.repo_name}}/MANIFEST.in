@@ -1,9 +1,14 @@
-include .travis.yml
-include CHANGELOG.rst
+include *.py
+include *.rst
 include LICENSE
 include MANIFEST.in
-include README.rst
-include mopidy_{{ cookiecutter.ext_name }}/ext.conf
+include pyproject.toml
 include tox.ini
 
+recursive-include .circleci *
+recursive-include .github *
+
+include mopidy_{{ cookiecutter.ext_name }}/ext.conf
+
 recursive-include tests *.py
+recursive-include tests/data *

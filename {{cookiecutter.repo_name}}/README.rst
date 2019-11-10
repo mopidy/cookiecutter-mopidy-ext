@@ -2,17 +2,17 @@
 {{ cookiecutter.dist_name }}
 ****************************
 
-.. image:: https://img.shields.io/pypi/v/{{ cookiecutter.dist_name }}.svg?style=flat
+.. image:: https://img.shields.io/pypi/v/{{ cookiecutter.dist_name }}.svg
     :target: https://pypi.org/project/{{ cookiecutter.dist_name }}/
     :alt: Latest PyPI version
 
-.. image:: https://img.shields.io/travis/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/master.svg?style=flat
-    :target: https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
-    :alt: Travis CI build status
+.. image:: https://img.shields.io/circleci/project/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/master.svg
+    :target: https://circleci.com/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
+    :alt: CircleCI build status
 
-.. image:: https://img.shields.io/coveralls/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/master.svg?style=flat
-   :target: https://coveralls.io/r/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
-   :alt: Test coverage
+.. image:: https://img.shields.io/codecov/c/github/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/master.svg
+    :target: https://codecov.io/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
+    :alt: Test coverage
 
 {{ cookiecutter.short_description }}
 
@@ -22,10 +22,10 @@ Installation
 
 Install by running::
 
-    pip install {{ cookiecutter.dist_name }}
+    python3 -m pip install {{ cookiecutter.dist_name }}
 
-Or, if available, install the Debian/Ubuntu package from `apt.mopidy.com
-<https://apt.mopidy.com/>`_.
+Or, if available, install the Debian/Ubuntu package from
+`apt.mopidy.com <https://apt.mopidy.com/>`_.
 
 
 Configuration
