@@ -1,10 +1,11 @@
 import logging
 import pathlib
 
+import pkg_resources
+
 from mopidy import config, ext
 
-
-__version__ = "{{ cookiecutter.version }}"
+__version__ = pkg_resources.get_distribution("{{ cookiecutter.dist_name }}").version
 
 # TODO: If you need to log, use loggers named after the current Python module
 logger = logging.getLogger(__name__)
