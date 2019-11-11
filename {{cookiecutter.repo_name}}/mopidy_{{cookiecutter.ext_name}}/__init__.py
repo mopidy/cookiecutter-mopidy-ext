@@ -21,7 +21,7 @@ class Extension(ext.Extension):
         return config.read(pathlib.Path(__file__).parent / "ext.conf")
 
     def get_config_schema(self):
-        schema = super(Extension, self).get_config_schema()
+        schema = super().get_config_schema()
         # TODO: Comment in and edit, or remove entirely
         #schema["username"] = config.String()
         #schema["password"] = config.Secret()
