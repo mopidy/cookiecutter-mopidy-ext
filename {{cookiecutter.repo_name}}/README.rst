@@ -2,15 +2,15 @@
 {{ cookiecutter.dist_name }}
 ****************************
 
-.. image:: https://img.shields.io/pypi/v/{{ cookiecutter.dist_name }}.svg
+.. image:: https://img.shields.io/pypi/v/{{ cookiecutter.dist_name }}
     :target: https://pypi.org/project/{{ cookiecutter.dist_name }}/
     :alt: Latest PyPI version
 
-.. image:: https://img.shields.io/circleci/project/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/master.svg
+.. image:: https://img.shields.io/circleci/build/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
     :target: https://circleci.com/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
     :alt: CircleCI build status
 
-.. image:: https://img.shields.io/codecov/c/github/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/master.svg
+.. image:: https://img.shields.io/codecov/c/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
     :target: https://codecov.io/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
     :alt: Test coverage
 
