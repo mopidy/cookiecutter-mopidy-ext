@@ -40,7 +40,10 @@ class Extension(ext.Extension):
         registry.add("backend", FoobarBackend)
 
         # TODO: Edit or remove entirely
-        registry.add("http:static", {
-            "name": self.ext_name,
-            "path": str(pathlib.Path(__file__) / "static")),
-        })
+        registry.add(
+            "http:static",
+            {
+                "name": self.ext_name,
+                "path": str(pathlib.Path(__file__) / "static"),
+            },
+        )
