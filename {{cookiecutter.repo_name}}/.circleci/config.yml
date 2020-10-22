@@ -7,6 +7,7 @@ workflows:
   version: 2
   test:
     jobs:
+      - py39
       - py38
       - py37
       - black
