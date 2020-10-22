@@ -15,9 +15,9 @@ workflows:
       - isort
 
 jobs:
-  py38: &test-template
+  py39: &test-template
     docker:
-      - image: mopidy/ci-python:3.8
+      - image: mopidy/ci-python:3.9
     steps:
       - checkout
       - restore_cache:
@@ -39,6 +39,11 @@ jobs:
           file: coverage.xml
       - store_test_results:
           path: test-results
+
+  py38:
+    <<: *test-template
+    docker:
+      - image: mopidy/ci-python:3.8
 
   py37:
     <<: *test-template
