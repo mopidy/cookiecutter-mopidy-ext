@@ -12,9 +12,11 @@ The template sets up a project with:
 - a Python module with an empty Mopidy extension,
 - an empty test suite executed with ``pytest``,
 - continuous integration using `CircleCI <https://www.circleci.com/>`_,
-- test coverage reporting to `Codecov <https://codecov.io/>`_, and
+- test coverage reporting to `Codecov <https://codecov.io/>`_,
 - a ``setup.py`` file for releasing and installing the extension as a Python
-  package.
+  package, and
+- a GitHub Action to automatically upload packages to PyPI when a GitHub
+  Release is created, if the GitHub repo has a `PYPI_TOKEN` secret set.
 
 
 Usage
