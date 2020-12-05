@@ -6,7 +6,6 @@ on:
 
 jobs:
   release:
-    if: ${{ secrets.PYPI_TOKEN != '' }}
     runs-on: ubuntu-20.04
 
     steps:
