@@ -1,4 +1,4 @@
-{% raw %}
+{% raw -%}
 name: CI
 
 on: [push, pull_request]
@@ -51,4 +51,4 @@ jobs:
         if: ${{ matrix.coverage }}
       - uses: codecov/codecov-action@v1
         if: ${{ matrix.coverage }}
-{% endraw %}
+{%- endraw %}
