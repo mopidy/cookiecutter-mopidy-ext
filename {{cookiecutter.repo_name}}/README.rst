@@ -6,7 +6,7 @@
     :target: https://pypi.org/project/{{ cookiecutter.dist_name }}/
     :alt: Latest PyPI version
 
-.. image:: https://img.shields.io/github/workflow/status/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }/CI
+.. image:: https://img.shields.io/github/workflow/status/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/CI
     :target: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/actions
     :alt: CI build status
 
