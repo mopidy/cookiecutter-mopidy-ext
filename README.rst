@@ -11,7 +11,7 @@ The template sets up a project with:
 - a license file with the Apache License,
 - a Python module with an empty Mopidy extension,
 - an empty test suite executed with ``pytest``,
-- continuous integration using `CircleCI <https://www.circleci.com/>`_,
+- continuous integration using GitHub Actions,
 - test coverage reporting to `Codecov <https://codecov.io/>`_,
 - a ``setup.py`` file for releasing and installing the extension as a Python
   package, and

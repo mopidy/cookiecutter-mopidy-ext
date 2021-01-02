@@ -6,9 +6,9 @@
     :target: https://pypi.org/project/{{ cookiecutter.dist_name }}/
     :alt: Latest PyPI version
 
-.. image:: https://img.shields.io/circleci/build/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
-    :target: https://circleci.com/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
-    :alt: CircleCI build status
+.. image:: https://img.shields.io/github/workflow/status/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }/CI
+    :target: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/actions
+    :alt: CI build status
 
 .. image:: https://img.shields.io/codecov/c/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
     :target: https://codecov.io/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
