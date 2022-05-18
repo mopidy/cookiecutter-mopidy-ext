@@ -6,6 +6,5 @@
   "repo_name": "{{ cookiecutter.dist_name|lower }}",
   "ext_name": "{{ cookiecutter.repo_name|replace('mopidy-', '') }}",
   "short_description": "Mopidy extension for Foobar mechanics",
-  "year": "2021",
   "version": "0.1.0"
 }
