@@ -1,5 +1,5 @@
 [tox]
-envlist = py39, py310, py311, py312, check-manifest, flake8
+envlist = py39, py310, py311, py312
 
 [testenv]
 sitepackages = true
@@ -9,11 +9,3 @@ commands =
         --basetemp={envtmpdir} \
         --cov=mopidy_{{ ext_name }} --cov-report=term-missing \
         {posargs}
-
-[testenv:check-manifest]
-deps = .[lint]
-commands = python -m check_manifest
-
-[testenv:flake8]
-deps = .[lint]
-commands = python -m flake8 --show-source --statistics

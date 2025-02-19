@@ -1,0 +1,53 @@
+[project]
+name = "{{ dist_name }}"
+description = "{{ short_description }}"
+readme = "README.md"
+requires-python = ">= 3.11"
+license = { text = "Apache-2.0" }
+authors = [{ name = "{{ author_full_name }}", email = "{{ author_email }}" }]
+classifiers = [
+    "Environment :: No Input/Output (Daemon)",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Sound/Audio :: Players",
+]
+dynamic = ["version"]
+dependencies = [
+    "mopidy >= 3.4.1",
+    "pykka >= 3.1.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/{{ github_username}}/{{ dist_name }}"
+
+[project.entry-points."mopidy.ext"]
+{{ ext_name }} = "mopidy_{{ ext_name }}:Extension"
+
+
+[build-system]
+requires = ["setuptools >= 66", "setuptools-scm >= 7.1"]
+build-backend = "setuptools.build_meta"
+
+
+[dependency-groups]
+dev = [
+    "tox",
+    "tox-uv",
+]
+
+
+# TODO: Setup pyright
+# TODO: Setup pytest
+# TODO: Setup ruff
+
+
+[tool.setuptools.package-data]
+"*" = ["*.conf"]
+
+
+[tool.setuptools_scm]
+# This section, even if empty, must be present for setuptools_scm to work
+
+
+# TODO: Setup tox

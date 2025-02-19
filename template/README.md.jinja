@@ -36,6 +36,24 @@ Before starting Mopidy, you must add configuration for
 - [Releases](https://github.com/{{ github_username }}/{{ dist_name }}/releases)
 
 
+## Development
+
+### Set up development environment
+
+Clone the repo using, e.g. using [gh](https://cli.github.com/):
+
+```sh
+gh repo clone {{ github_username }}/{{ dist_name }}
+```
+
+Enter the directory, and install dependencies using [uv](https://docs.astral.sh/uv/):
+
+```sh
+cd {{ dist_name }}/
+uv sync
+```
+
+
 ## Credits
 
 - Original author: [{{ author_full_name }}](https://github.com/{{ github_username }})
