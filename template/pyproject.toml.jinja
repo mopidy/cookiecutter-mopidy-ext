@@ -35,12 +35,20 @@ dev = [
     "tox",
     { include-group = "ruff" },
     { include-group = "tests" },
+    { include-group = "typing" },
 ]
 ruff = ["ruff"]
 tests = ["pytest", "pytest-cov"]
+typing = ["pyright"]
 
 
-# TODO: Setup pyright
+[tool.pyright]
+pythonVersion = "3.11"
+typeCheckingMode = "standard"
+# Not all dependencies have type hints:
+reportMissingTypeStubs = false
+# Already covered by ruff's flake8-self checks:
+reportPrivateImportUsage = false
 
 
 [tool.pytest.ini_options]
@@ -91,6 +99,7 @@ env_list = [
     "3.11",
     "3.12",
     "3.13",
+    "pyright",
     "ruff-check",
     "ruff-format",
 ]
@@ -107,6 +116,10 @@ commands = [
         { replace = "posargs", extend = true },
     ],
 ]
+
+[tool.tox.env.pyright]
+dependency_groups = ["typing"]
+commands = [["pyright", "{posargs:src}"]]
 
 [tool.tox.env.ruff-check]
 skip_install = true
