@@ -1,5 +1,5 @@
-from mopidy_{{ cookiecutter.ext_name }} import Extension
-from mopidy_{{ cookiecutter.ext_name }} import frontend as frontend_lib
+from mopidy_{{ ext_name }} import Extension
+from mopidy_{{ ext_name }} import frontend as frontend_lib
 
 
 def test_get_default_config():
@@ -7,7 +7,7 @@ def test_get_default_config():
 
     config = ext.get_default_config()
 
-    assert "[{{ cookiecutter.ext_name }}]" in config
+    assert "[{{ ext_name }}]" in config
     assert "enabled = true" in config
 
 

@@ -7,7 +7,7 @@ deps = .[test]
 commands =
     python -m pytest \
         --basetemp={envtmpdir} \
-        --cov=mopidy_{{ cookiecutter.ext_name }} --cov-report=term-missing \
+        --cov=mopidy_{{ ext_name }} --cov-report=term-missing \
         {posargs}
 
 [testenv:check-manifest]

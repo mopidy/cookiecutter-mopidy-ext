@@ -1,12 +1,12 @@
 [metadata]
-name = {{ cookiecutter.dist_name }}
-version = {{ cookiecutter.version }}
-url = https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.dist_name|lower }}
-author = {{ cookiecutter.author_full_name }}
-author_email = {{ cookiecutter.author_email }}
+name = {{ dist_name }}
+version = {{ version }}
+url = https://github.com/{{ github_username }}/{{ dist_name|lower }}
+author = {{ author_full_name }}
+author_email = {{ author_email }}
 license = Apache License, Version 2.0
 license_file = LICENSE
-description = {{ cookiecutter.short_description }}
+description = {{ short_description }}
 long_description = file: README.rst
 classifiers =
     Environment :: No Input/Output (Daemon)
@@ -58,11 +58,11 @@ exclude =
 
 [options.entry_points]
 mopidy.ext =
-    {{ cookiecutter.ext_name }} = mopidy_{{ cookiecutter.ext_name }}:Extension
+    {{ ext_name }} = mopidy_{{ ext_name }}:Extension
 
 
 [flake8]
-application-import-names = mopidy_{{ cookiecutter.ext_name }}, tests
+application-import-names = mopidy_{{ ext_name }}, tests
 max-line-length = 80
 exclude = .git, .tox, build
 select =

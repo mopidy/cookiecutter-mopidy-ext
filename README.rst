@@ -2,7 +2,7 @@
 cookiecutter-mopidy-ext
 ***********************
 
-`cookiecutter <https://cookiecutter.readthedocs.io/>`_ template for a
+`Copier <https://copier.readthedocs.io/>`_ template for a
 `Mopidy <https://mopidy.com/>`_ extension.
 
 The template sets up a project with:
@@ -22,13 +22,15 @@ The template sets up a project with:
 Usage
 =====
 
-#. Install `cookiecutter`::
+#. Install `copier`::
 
-       python3 -m pip install cookiecutter
+       uv tool install copier
+       # or
+       pipx install copier
 
 #. Generate a Mopidy extension project::
 
-       cookiecutter gh:mopidy/cookiecutter-mopidy-ext
+       copier copy gh:mopidy/cookiecutter-mopidy-ext my-extension-dir
 
 #. Create a Git repo from the generated project.
 
