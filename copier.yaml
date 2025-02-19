@@ -26,8 +26,3 @@ short_description:
   type: str
   help: "Short description of the extension"
   default: "Mopidy extension for Foobar mechanics"
-
-version:
-  type: str
-  help: "Initial version number"
-  default: "0.1.0"
