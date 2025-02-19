@@ -86,6 +86,39 @@ To check for type errors, use [pyright](https://microsoft.github.io/pyright/):
 pyright .
 ```
 
+### Setup before first release
+
+Before the first release, you must [enable trusted publishing on
+PyPI](https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/)
+so that the `release.yml` GitHub Action can create the PyPI project and publish
+releases to PyPI.
+
+When following the instructions linked above, use the following values in the
+form at PyPI:
+
+- Publisher: GitHub
+- PyPI project name: `{{ dist_name }}`
+- Owner: `{{ github_username }}`
+- Repository name: `{{ dist_name }}`
+- Workflow name: `release.yml`
+- Environment name: `pypi` (must match environment name in `release.yml`)
+
+### Making a release
+
+To make a release to PyPI, go to the project's [GitHub releases
+page](https://github.com/{{ github_username }}/{{ dist_name }}/releases)
+and click the "Draft a new release" button.
+
+In the "choose a tag" dropdown, select the tag you want to release or create a
+new tag, e.g. `v0.1.0`. Add a title, e.g. `v0.1.0`, and a description of the changes.
+
+Decide if the release is a pre-release (alpha, beta, or release candidate) or
+should be marked as the latest release, and click "Publish release".
+
+Once the releease is created, the `release.yml` GitHub Action will automatically
+build and publish the release to
+[PyPI](https://pypi.org/project/{{ dist_name }}/).
+
 
 ## Credits
 
