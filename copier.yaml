@@ -14,16 +14,13 @@ github_username:
 
 dist_name:
   type: str
-  default: "Mopidy-Foobar"
-
-repo_name:
-  type: str
-  default: "{{ dist_name|lower }}"
+  help: "Repo and package name (all lowercase)"
+  default: "mopidy-foobar"
 
 ext_name:
   type: str
-  default: "{{ repo_name|replace('mopidy-', '') }}"
   help: "Extension name"
+  default: "{{ dist_name|lower|replace('mopidy-', '') }}"
 
 short_description:
   type: str
