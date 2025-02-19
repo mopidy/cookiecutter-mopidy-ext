@@ -33,8 +33,10 @@ build-backend = "setuptools.build_meta"
 [dependency-groups]
 dev = [
     "tox",
+    { include-group = "ruff" },
     { include-group = "tests" },
 ]
+ruff = ["ruff"]
 tests = ["pytest", "pytest-cov"]
 
 
@@ -50,7 +52,30 @@ filterwarnings = [
 ]
 
 
-# TODO: Setup ruff
+[tool.ruff]
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    # Add rules you want to ignore here
+    "D",       # pydocstyle
+    "D203",  # one-blank-line-before-class
+    "D213",  # multi-line-summary-second-line
+    "TD002", # missing-todo-author
+    "TD003", # missing-todo-link
+    #
+    # Conflicting with `ruff format`
+    "COM812", # missing-trailing-comma
+    "ISC001", # single-line-implicit-string-concatenation
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = [
+    "ARG",  # flake8-unused-arguments
+    "D",    # pydocstyle
+    "S101", # assert
+]
 
 
 [tool.setuptools.package-data]
@@ -66,6 +91,8 @@ env_list = [
     "3.11",
     "3.12",
     "3.13",
+    "ruff-check",
+    "ruff-format",
 ]
 
 [tool.tox.env_run_base]
@@ -80,3 +107,13 @@ commands = [
         { replace = "posargs", extend = true },
     ],
 ]
+
+[tool.tox.env.ruff-check]
+skip_install = true
+dependency_groups = ["ruff"]
+commands = [["ruff", "check", "{posargs:.}"]]
+
+[tool.tox.env.ruff-format]
+skip_install = true
+dependency_groups = ["ruff"]
+commands = [["ruff", "format", "--check", "{posargs:.}"]]
