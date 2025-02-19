@@ -33,12 +33,23 @@ build-backend = "setuptools.build_meta"
 [dependency-groups]
 dev = [
     "tox",
-    "tox-uv",
+    { include-group = "tests" },
 ]
+tests = ["pytest", "pytest-cov"]
 
 
 # TODO: Setup pyright
-# TODO: Setup pytest
+
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    # By default, fail tests on warnings
+    "error",
+    #
+    # Add any warnings you want to ignore here
+]
+
+
 # TODO: Setup ruff
 
 
@@ -50,4 +61,22 @@ dev = [
 # This section, even if empty, must be present for setuptools_scm to work
 
 
-# TODO: Setup tox
+[tool.tox]
+env_list = [
+    "3.11",
+    "3.12",
+    "3.13",
+]
+
+[tool.tox.env_run_base]
+package = "wheel"
+wheel_build_env = ".pkg"
+dependency_groups = ["tests"]
+commands = [
+    [
+        "pytest",
+        "--cov",
+        "--basetemp={envtmpdir}",
+        { replace = "posargs", extend = true },
+    ],
+]
