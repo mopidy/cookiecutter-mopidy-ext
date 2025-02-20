@@ -5,18 +5,26 @@
 
 The template sets up a project with:
 
-- a readme explaining how to install and configure the extension,
-- a license file with the Apache License,
-- a Python module with an empty Mopidy extension,
-- an empty test suite executed with `pytest`,
-- continuous integration using GitHub Actions,
-- test coverage reporting to [Codecov](https://codecov.io/),
-- a `setup.py` file for releasing and installing the extension as a Python
-  package, and
-- a GitHub Action to automatically upload packages to PyPI when a GitHub
-  Release is created, if the GitHub repo has a `PYPI_TOKEN` secret set.
+- `README.md`: a readme explaining how to install and configure the extension,
+  as well as how to contribute to the project,
+- `LICENSE`: the Apache License, Version 2.0,
+- `src/`: the skeleton of a Mopidy extension,
+- `tests/`: the skeleton of a test suite,
+- `pyproject.toml`: configuration for all of the development tools:
 
-## Usage
+  - packaging and distribution with [setuptools](https://setuptools.pypa.io/),
+  - testing with [pytest](https://pytest.org/),
+  - type checking with [Pyright](https://microsoft.github.io/pyright/),
+  - formatting and linting with [Ruff](https://docs.astral.sh/ruff/),
+  - multi-environment testing with [tox](https://tox.wiki/),
+
+- `.github/workflows/ci.yml`: a GitHub Actions workflow for continuous
+  integration, running all the tox environments, with test coverage reporting to
+  [Codecov](https://codecov.io/),
+- `.github/workflows/release.yml`: a GitHub Actions workflow for automatically
+  publishing the extension to PyPI when a GitHub Release is created.
+
+## Creating a Mopidy extension
 
 1. Create a new empty Git repo for your Mopidy extension:
 
@@ -38,4 +46,5 @@ The template sets up a project with:
    extensions, please read the docs on [extension
    development](https://docs.mopidy.com/latest/extensiondev).
 
-4. Release the extension to [PyPI](https://pypi.org/).
+4. Release the extension to [PyPI](https://pypi.org/) by following the
+   instructions in the generated `README.md` file.
