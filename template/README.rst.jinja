@@ -1,0 +1,53 @@
+{{ "*" * dist_name|length }}
+{{ dist_name }}
+{{ "*" * dist_name|length }}
+
+.. image:: https://img.shields.io/pypi/v/{{ dist_name }}
+    :target: https://pypi.org/project/{{ dist_name }}/
+    :alt: Latest PyPI version
+
+.. image:: https://img.shields.io/github/actions/workflow/status/{{ github_username }}/{{ repo_name }}/CI?branch=main
+    :target: https://github.com/{{ github_username }}/{{ repo_name }}/actions
+    :alt: CI build status
+
+.. image:: https://img.shields.io/codecov/c/gh/{{ github_username }}/{{ repo_name }}
+    :target: https://codecov.io/gh/{{ github_username }}/{{ repo_name }}
+    :alt: Test coverage
+
+{{ short_description }}
+
+
+Installation
+============
+
+Install by running::
+
+    python3 -m pip install {{ dist_name }}
+
+See https://mopidy.com/ext/{{ ext_name }}/ for alternative installation methods.
+
+
+Configuration
+=============
+
+Before starting Mopidy, you must add configuration for
+{{ dist_name }} to your Mopidy configuration file::
+
+    [{{ ext_name }}]
+    # TODO: Add example of extension config
+
+
+Project resources
+=================
+
+- `Source code <https://github.com/{{ github_username }}/{{ dist_name|lower }}>`_
+- `Issue tracker <https://github.com/{{ github_username }}/{{ dist_name|lower }}/issues>`_
+- `Changelog <https://github.com/{{ github_username }}/{{ dist_name|lower }}/blob/master/CHANGELOG.rst>`_
+
+
+Credits
+=======
+
+- Original author: `{{ author_full_name }} <https://github.com/{{ github_username }}>`__
+- Current maintainer: `{{ author_full_name }} <https://github.com/{{ github_username }}>`__
+- `Contributors <https://github.com/{{ github_username }}/{{ dist_name|lower }}/graphs/contributors>`_
