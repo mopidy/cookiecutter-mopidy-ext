@@ -42,6 +42,16 @@ tests = ["pytest", "pytest-cov"]
 typing = ["pyright"]
 
 
+[tool.coverage.paths]
+source = ["src/", "*/site-packages/"]
+
+[tool.coverage.run]
+source_pkgs = ["mopidy_{{ ext_name }}"]
+
+[tool.coverage.report]
+show_missing = true
+
+
 [tool.pyright]
 pythonVersion = "3.11"
 typeCheckingMode = "standard"
