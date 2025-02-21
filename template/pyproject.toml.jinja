@@ -63,8 +63,8 @@ reportPrivateImportUsage = false
 
 [tool.pytest.ini_options]
 filterwarnings = [
-    # By default, fail tests on warnings
-    "error",
+    # By default, fail tests on warnings from our own code
+    "error::mopidy_{{ ext_name }}",
     #
     # Add any warnings you want to ignore here
 ]
