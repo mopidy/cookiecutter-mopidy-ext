@@ -48,3 +48,16 @@ The template sets up a project with:
 
 4. Release the extension to [PyPI](https://pypi.org/) by following the
    instructions in the generated `README.md` file.
+
+## Updating a Mopidy extension
+
+When this template is updated, you can update your extension to the latest
+tagged version of this template by running:
+
+```sh
+cd mopidy-foobar
+uvx copier update .
+```
+
+For details on how this works, see Copier's [update documentation
+](https://copier.readthedocs.io/en/stable/updating/).
