@@ -34,8 +34,6 @@ Usage
 
        uvx copier copy gh:mopidy/mopidy-ext-template .
 
-#. Create a Git repo from the generated project.
-
 #. Make your Mopidy extension do something. To learn more about creating Mopidy
    extensions, please read the docs on `extension development
    <https://docs.mopidy.com/latest/extensiondev/>`_.
