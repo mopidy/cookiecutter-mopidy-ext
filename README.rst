@@ -1,6 +1,6 @@
-***********************
-cookiecutter-mopidy-ext
-***********************
+*******************
+mopidy-ext-template
+*******************
 
 `Copier <https://copier.readthedocs.io/>`_ template for a
 `Mopidy <https://mopidy.com/>`_ extension.
@@ -22,25 +22,22 @@ The template sets up a project with:
 Usage
 =====
 
-#. Install `copier`::
+#. Create a new empty Git repo for your Mopidy extension::
 
-       uv tool install copier
-       # or
-       pipx install copier
+       mkdir mopidy-foobar
+       cd mopidy-foobar
+       git init
 
-#. Generate a Mopidy extension project::
+#. Generate the skeleton of a new Mopidy extension by using `uv
+   <https://docs.astral.sh/uv/>`_ to run `Copier
+   <https://copier.readthedocs.io/>`__ with this extension template::
 
-       copier copy gh:mopidy/cookiecutter-mopidy-ext my-extension-dir
+       uvx copier copy gh:mopidy/mopidy-ext-template .
 
 #. Create a Git repo from the generated project.
 
-#. Make your Mopidy extension do something.
+#. Make your Mopidy extension do something. To learn more about creating Mopidy
+   extensions, please read the docs on `extension development
+   <https://docs.mopidy.com/latest/extensiondev/>`_.
 
 #. Release the extension to `PyPI <https://pypi.org/>`_.
-
-
-Further reading
-===============
-
-To learn more about creating Mopidy extensions, please read the docs on
-`extension development <https://docs.mopidy.com/en/latest/extensiondev/>`_.
