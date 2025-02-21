@@ -32,10 +32,8 @@ def main(dst: pathlib.Path | None = None):
             "author_full_name": "Alice",
             "author_email": "alice@example.com",
             "github_username": "alice",
-            "dist_name": "Mopidy-Example",
-            "repo_name": "mopidy-example",
+            "dist_name": "mopidy-example",
             "ext_name": "example",
-            "version": "0.1.0",
         },
     )
 
